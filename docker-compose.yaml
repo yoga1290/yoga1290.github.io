@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+
+  frontend:
+    image: nginx
+    volumes:
+      - ./docs:/usr/share/nginx/html
+    ports: 
+      - 8080:80

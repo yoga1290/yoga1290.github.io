@@ -1,0 +1,10 @@
+[{
+    "title": "Kubernetes",
+    "url": "https://github.com/yoga1290/cheatsheets/blob/master/Kubernetes.md"
+}, {
+    "title": "PyTorch | TensorFlow | Keras [WIP]",
+    "url": "https://github.com/yoga1290/cheatsheets/blob/master/PyTorch.ipynb"
+}, {
+    "title": "NGINX/HTTPS, MySQL, Mongo & others on Docker/Compose",
+    "url": "https://github.com/yoga1290/cheatsheets/blob/master/docker.md"
+}]
