@@ -3,7 +3,7 @@ import './style.scss';
 
 export default () => (
     <div className="story animate__animated animate__fadeInUp">
-        <div className="big card bg-dark col-md-8 col-sm-12">
+        <div className="big card bg-dark col-12">
             <h1 className="card-title">Story</h1>
             <div className="card-body">
                 <div className="info card bg-dark col-lg-8 col-md-10 col-sm-12">

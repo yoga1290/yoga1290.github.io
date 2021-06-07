@@ -8,6 +8,6 @@ action "Push Action" {
   secrets = ["GITHUB_TOKEN"]
   env = {
     REPO_USERNAME = "yoga1290"
-    REPO_URL = "github.com/yoga1290/template-tsx.git"
+    REPO_URL = "github.com/yoga1290/yoga1290.github.io.git"
   }
 }

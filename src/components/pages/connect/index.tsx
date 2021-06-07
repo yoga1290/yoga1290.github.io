@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../card'
+import Card from '../../shared/card'
 
 export default () => (
     <div className="contact animate__animated animate__fadeInUp">

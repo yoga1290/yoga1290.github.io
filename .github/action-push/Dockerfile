@@ -12,7 +12,7 @@ LABEL "maintainer"="yoga1290 <yoga1290@github.com>"
 
 WORKDIR  /usr/app
 
-ADD entrypoint.sh /entrypoint.sh
+ADD build-ghpage.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]

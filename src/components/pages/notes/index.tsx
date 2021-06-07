@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../../card'
+import Card from '../../shared/card'
 import jsonData from './data.json'
 
 const data = jsonData.map(({title, text, url}: any) => ({
