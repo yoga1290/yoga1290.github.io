@@ -10,6 +10,10 @@
     "url": "https://github.com/yoga1290/storyreport#readme"
 }, {
     "title": "H5Recorder",
-    "text": "NPM package for merging videos based on JSON configuration",
+    "text": "NPM package that generates video based on query-string parameters passed to a template webpage & merges it w other resources based on color keys",
     "url": "https://github.com/yoga1290/H5Recorder#readme"
+}, {
+    "title": "Face verification",
+    "text": "Python/Keras/TensorFlow/FFmpeg experiment for fine-tuning VGG16 model to verify certain person out of YouTube video.",
+    "url": "https://github.com/yoga1290/experiment-ffmpeg-vgg#readme"
 }]
