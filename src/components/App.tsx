@@ -16,7 +16,7 @@ export default () => (
             <HashRouter>
                <Header />
                 <div className="container-fluid">
-                    <div className="mx-auto col-lg-8 col-md-10 col-sm-12 col-xs-12">
+                    <div className="mx-auto col-lg-10 col-md-10 col-sm-12 col-xs-12">
                         
                         <Route exact 
                             path="/"

@@ -1,19 +1,28 @@
 [{
-    "title": "Interactive templates",
-    "url": "https://yoga1290.github.io/Templates"
-}, {
-    "title": "Video Quotes (Vue/Spring)",
+    "title": "Face verification",
+    "subtitle": "TensorFlow/Keras (Python) | FFmpeg",
+    "text": "Fine-tuning VGG16 model to verify certain person out of YouTube video using VideoQuotes database as a training dataset.",
+    "url": "https://github.com/yoga1290/experiment-ffmpeg-vgg#readme"
+},  {
+    "title": "VideoQuotes",
+    "subtitle": "Spring Boot (Java) | Vue.js | Node.js | Docker | GitHub Actions",
     "text": "Deployed at yoga1290.github.io/VideoQuotes; may take < a min to wake up under free Heroku tire",
     "url": "https://github.com/yoga1290/VideoQuotes#readme"
 }, {
-    "title": "Template-based SPA video wizard",
-    "url": "https://github.com/yoga1290/storyreport#readme"
-}, {
     "title": "H5Recorder",
-    "text": "NPM package that generates video based on query-string parameters passed to a template webpage & merges it w other resources based on color keys",
+    "subtitle": "Node.js | FFmpeg | NPM | Phantom.js",
+    "text": "NPM package that generates videos based on query-string parameters passed to a template webpage & merges it w other resources based on color keys",
     "url": "https://github.com/yoga1290/H5Recorder#readme"
 }, {
-    "title": "Face verification",
-    "text": "Python/Keras/TensorFlow/FFmpeg experiment for fine-tuning VGG16 model to verify certain person out of YouTube video.",
-    "url": "https://github.com/yoga1290/experiment-ffmpeg-vgg#readme"
+    "title": "Interactive templates",
+    "subtitle": "Vue.js | Node.js",
+    "url": "https://yoga1290.github.io/Templates"
+}, {
+    "title": "Template-based SPA video wizard",
+    "subtitle": "Angular | Node.js | FFmpeg",
+    "url": "https://github.com/yoga1290/storyreport#readme"
+}, {
+    "title": "This (github) page",
+    "subtitle": "TypeScript | React.js | GitHub/CI Actions",
+    "url": "https://github.com/yoga1290/yoga1290.github.io"
 }]

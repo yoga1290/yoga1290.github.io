@@ -7,4 +7,5 @@ ls;
 npm i
 npm run build;
 git add docs;
-git commit -m "ghpage" && git push;
+git commit -m "ghpage";
+git push;
