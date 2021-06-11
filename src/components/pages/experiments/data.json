@@ -1,4 +1,14 @@
 [{
+    "title": "MIU Team project: Facial Expression Recognition model",
+    "subtitle": "Python | TensorFlow/Keras",
+    "text": "A Transfer Learning team project for the MIU Machine Learning course. I did the Grad-Cam implementation part (last part)",
+    "url": "https://colab.research.google.com/drive/1bnIRXjNyIUoV5giTOKLamaCfUyVp_WkX?usp=sharing"
+    }, {
+    "title": "MIU Team project: Movie Recommendation System",
+    "subtitle": "Python | PyTorch | TensorFlow/Keras",
+    "text": "A Collaborative Filtering team project for the MIU Machine Learning course. I did the AutoML and CollabFNet implementation part (last part)",
+    "url": "https://colab.research.google.com/drive/1gVv057SW4hJ4CBAVupK1D4c68JeYjjRc?usp=sharing"
+    },{
     "title": "Face verification",
     "subtitle": "TensorFlow/Keras (Python) | FFmpeg",
     "text": "Fine-tuning VGG16 model to verify certain person out of YouTube video using VideoQuotes database as a training dataset.",
