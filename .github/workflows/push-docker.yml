@@ -47,7 +47,7 @@ jobs:
         echo "::set-output name=REPO::$REPO"
 
     # https://github.com/docker/build-push-action
-    - uses: docker/build-push-action@v1
+    - uses: docker/build-push-action@v5
       env:
         # https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#about-contexts-and-expressions
         # YY.MM.TAG_COUNT
@@ -65,4 +65,4 @@ jobs:
         dockerfile: ./Dockerfile
         # tags: ${{env.TAG}}
         tags: ${{steps.tag.outputs.TAG}}
-        push: true
+        # push: true
