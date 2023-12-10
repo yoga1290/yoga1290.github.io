@@ -2,7 +2,17 @@ version: '3.7'
 
 services:
 
+  sidecar-build:
+    build:
+      context: .
+      dockerfile: Dockerfile.builder
+    volumes:
+      - ./src:/usr/app/src
+      - ./docs:/usr/app/docs
+    
   frontend:
+    depends_on:
+      - sidecar-build
     image: nginx
     volumes:
       - ./docs:/usr/share/nginx/html

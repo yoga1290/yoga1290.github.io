@@ -7,4 +7,7 @@
 }, {
     "title": "NGINX/HTTPS, MySQL, Mongo & others on Docker/Compose",
     "url": "https://github.com/yoga1290/cheatsheets/blob/master/docker.md"
+}, {
+    "title": "Design Patterns in Plant UML; online generator",
+    "url": "https://colab.research.google.com/github/yoga1290/design-patterns-in-plantuml/blob/main/colab_compatible.ipynb"
 }]
