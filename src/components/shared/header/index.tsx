@@ -19,7 +19,7 @@ export default () => {
                 <ul className="nav justify-content-between">
 
                     <li className="nav-item text-center">
-                        <NavLink to={`/experiments`} className="nav-link text-center">
+                        <NavLink to={`/`} className="nav-link text-center">
                             <span className="material-icons align-middle">biotech</span>
                             <div className="d-sm-block d-md-inline align-middle">Experiments</div>
                         </NavLink>

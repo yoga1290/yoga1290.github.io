@@ -3,6 +3,14 @@ import { NavLink } from 'react-router-dom'
 
 import './style.scss'
 
+const navLinkClassName = ({ isActive, isPending, isTransitioning }: any) => (
+                              [
+                                "nav-link",
+                                isPending ? "pending" : "",
+                                isActive ? "active" : "",
+                                isTransitioning ? "transitioning" : "",
+                              ].join(" "));
+
 export default () => (
     <div className="menu">
 
@@ -14,30 +22,24 @@ export default () => (
           role="tablist"
           aria-orientation="vertical">
 
-      <NavLink
-        className="nav-link"
-        activeClassName="active"
-        to="/"
-        exact={true}>👨🏻‍💻Story</NavLink>
+      {/* <NavLink
+        className={navLinkClassName}
+        to="/">👨🏻‍💻Story</NavLink> */}
         
       <NavLink
-        className="nav-link"
-        activeClassName="active"
+        className={navLinkClassName}
         to="/hacks">⚙️Hacks</NavLink>
 
       <NavLink
-        className="nav-link"
-        activeClassName="active"
-        to="/experiments">🔭Experiments</NavLink>
+        className={navLinkClassName}
+        to="/">🔭Experiments</NavLink>
 
       <NavLink
-        className="nav-link"
-        activeClassName="active"
+        className={navLinkClassName}
         to="/notes">📝Notes</NavLink>
 
       <NavLink
-        className="nav-link"
-        activeClassName="active"
+        className={navLinkClassName}
         to="/connect">🧭Connect</NavLink>
 
     </div>

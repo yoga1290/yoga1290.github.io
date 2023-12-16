@@ -81,6 +81,6 @@ module.exports = {
   devServer: {
     // https://webpack.js.org/configuration/dev-server/#devserverhttps
     // https: true,
-    contentBase: APP_PATH
+    hot: true
   }
 };
