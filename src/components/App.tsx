@@ -18,10 +18,6 @@ export default () => (
                 <div className="container-fluid">
                     <div className="mx-auto col-lg-10 col-md-10 col-sm-12 col-xs-12">
                         <Routes>
-                            {/* <Route 
-                                path="/"
-                                element={<Story/>}
-                            /> */}
                             <Route 
                                 path="/hacks"
                                 element={<Hacks/>}
@@ -33,6 +29,10 @@ export default () => (
                             />
                             <Route 
                                 path="/"
+                                element={<Experiments/>}
+                            />
+                            <Route
+                                path="/experiments"
                                 element={<Experiments/>}
 
                             />
