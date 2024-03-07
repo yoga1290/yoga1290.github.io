@@ -28,8 +28,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json', '.jpg'],
     alias: {
-      '@services': path.resolve(__dirname, 'src', 'services', 'index.ts'),
-      'bootstrap-css': 'node_modules/bootstrap/dist/css/bootstrap.css'
+      '@services': path.resolve(__dirname, 'src', 'services', 'index.ts')
     }
   },
 
@@ -37,7 +36,8 @@ module.exports = {
     rules: [{
       test: /\.(ts|js)x?$/,
       loader: 'babel-loader',
-      exclude: /node_modules/,
+      // exclude: /node_modules/,
+      exclude: /node_modules\/(?!yoga1290-ui-pool)/,
       options: {
         babelrc: false,
         "presets": [
@@ -69,12 +69,12 @@ module.exports = {
           outputPath: path.relative(APP_PATH, assetsPath)
         }
       }]
-    }],
+    }]
   },
 
   plugins: [
     new HtmlWebpackPlugin({ inject: true, template: path.join(APP_PATH, 'index.html') }),
-    new ForkTsCheckerWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin()
   ],
 
 
