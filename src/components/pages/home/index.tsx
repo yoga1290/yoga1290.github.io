@@ -8,14 +8,16 @@ import Connect from "../connect";
 
 import CardFeatured from 'yoga1290-ui-pool/react/card-featured';
 
+import './hero.jpg'; //TODO: better way to trigger file-loader?
 
 const goTo = (url: string) =>( ()=>(location.href=url) );
 
 export default () => (
     <div className="home-screen animate__animated animate__fadeInUp col-12">
 
-        <div className='col-12'>
+        <div className='home-screen__hero col-12'>
             <CardFeatured 
+                backgroundImageUrl='hero.jpg'
                 title='Story'
                 text={<>
                     My development journey started during middle school where I was introduced to Java ME at an anime fan-site,

@@ -11,7 +11,7 @@ const APP_PATH = path.resolve(__dirname, 'src');
 
 const outputPath = path.resolve(__dirname, 'docs');
 
-let assetsPath = path.resolve(APP_PATH, 'assets');
+let assetsPath = outputPath;
 // let assets = fs.readdirSync(assetsPath).map((v) => {
 //    console.log('assets', path.join(assetsPath, v));
 //    return path.join(assetsPath, v);
