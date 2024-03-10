@@ -31,12 +31,4 @@
     "subtitle": "TypeScript | React.js | Bootstrap | Anime.css | Nginx on Docker | GitHub Actions",
     "text": "NPM module to provide a pool of reusable UI components to resolve boilerplate stuff; e.g: cards & header of this page",
     "url": "https://yoga1290.github.io/yoga1290-ui-pool"
-}, {
-    "title": "Interactive templates",
-    "subtitle": "Vue.js | Node.js",
-    "url": "https://yoga1290.github.io/Templates"
-}, {
-    "title": "Template-based SPA video wizard",
-    "subtitle": "Angular | Node.js | FFmpeg",
-    "url": "https://github.com/yoga1290/storyreport#readme"
 }]
