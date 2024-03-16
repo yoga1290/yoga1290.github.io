@@ -46,8 +46,8 @@ module.exports = {
           "@babel/react"
         ],
         "plugins": [
-            "@babel/proposal-class-properties",
-            "@babel/proposal-object-rest-spread"
+            "@babel/plugin-transform-class-properties",
+            "@babel/plugin-transform-object-rest-spread"
         ]
       }
     }, {
