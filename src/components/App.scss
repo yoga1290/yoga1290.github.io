@@ -1,10 +1,15 @@
 // @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css' 
 body {
-    background-color: #171819;
+    background-color: #524e47;
 }
 
 .row {
     margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+nav.navbar {
+    width: 100%;
+    position: fixed;
 }

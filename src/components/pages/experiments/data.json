@@ -1,5 +1,11 @@
 [{
-    "title": "VideoQuotes",
+    "title": "Core System (dependency module)",
+    "subtitle": "Spring Boot (Java) | Maven Repository",
+    "text": "A Core-System in Plugin-Architecture Pattern to configure: Thread Pool capacity, RBAC Security (ROLE-URI), AOP logger pattern & file size, OutBoundService, Email Service for Spring Boot apps",
+    "url": "https://github.com/yoga1290/spring-core-system#readme",
+    "backgroudImage": "https://github.com/yoga1290/spring-core-system/blob/main/docs/readme.png?raw=true"
+}, {
+    "title": "VideoQuotes", 
     "subtitle": "Spring Boot (Java) | Vue.js | Webpack | Node.js | MongoDB | Nginx on Docker | GitHub Actions",
     "text": "Spring Boot (w/ JWT auth) backend, a Vue.js on frontend Nginx server and a mongoDB as database.\n The motivation behind that 7 year old personal experiment was to make a tool to help in taking notes and make \"video-quotes\" out of Youtube interviews I casually check. My Heroku deployment is retired; but you can always run it free in your local machine for fun",
     "url": "https://github.com/yoga1290/VideoQuotes#readme",
@@ -29,6 +35,6 @@
 }, {
     "title": "My UI Pool",
     "subtitle": "TypeScript | React.js | Bootstrap | Anime.css | Nginx on Docker | GitHub Actions",
-    "text": "NPM module to provide a pool of reusable UI components to resolve boilerplate stuff; e.g: cards & header of this page",
+    "text": "NPM dependency module to provide a pool of reusable UI components to resolve boilerplate stuff; e.g: cards & header of this page",
     "url": "https://yoga1290.github.io/yoga1290-ui-pool"
 }]
