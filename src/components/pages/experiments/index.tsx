@@ -18,7 +18,7 @@ export default () => (
         {data.map(({title, text, url, subtitle, backgroudImage}: any) => (
             
             !!backgroudImage? 
-            (<div className='col-12 col-md-6'>
+            (<div className='col-12 col-md-6 align-self-stretch d-flex'>
                 <CardFeatured
                     title={title}
                     subtitle={subtitle}
@@ -27,7 +27,7 @@ export default () => (
                     backgroundImageUrl={backgroudImage}
                     click={openLink(url)} />
             </div>): (
-            <div className='col-12 col-sm-6 col-md-4'>
+            <div className='col-12 col-sm-6 col-md-4 align-self-stretch d-flex'>
                 <Card
                     title={title}
                     subtitle={subtitle}

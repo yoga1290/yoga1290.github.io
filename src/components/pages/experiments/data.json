@@ -1,7 +1,7 @@
 [{
     "title": "Core System (dependency module)",
     "subtitle": "Spring Boot (Java) | Maven Repository",
-    "text": "A Core-System in Plugin-Architecture Pattern to configure: Thread Pool capacity, RBAC Security (ROLE-URI), AOP logger pattern & file size, OutBoundService, Email Service for Spring Boot apps",
+    "text": "A Core-System in Plugin-Architecture Pattern to configure: Thread Pool capacity, RBAC Security (ROLE-URI), AOP logger pattern & file size, REST Client-Service, Email Service for Spring Boot apps",
     "url": "https://github.com/yoga1290/spring-core-system#readme",
     "backgroudImage": "https://github.com/yoga1290/spring-core-system/blob/main/docs/readme.png?raw=true"
 }, {
@@ -19,7 +19,7 @@
 }, {
     "title": "H5Recorder",
     "subtitle": "Node.js | FFmpeg | NPM | Phantom.js",
-    "text": "NPM package that records web pages and generates video reports; \n the query-string parameters passed to the template webpage & merges it w other resources based on color keys",
+    "text": "NPM package that records web pages and generates video reports; \n Parameters are passed as query-string (?queryK=V) to template webpage(s), in which it get merged with video/audio resources based on color/chroma keys (Green Screen) using FFmpeg",
     "url": "https://github.com/yoga1290/H5Recorder#readme",
     "backgroudImage": "https://github.com/yoga1290/H5Recorder/blob/master/doc/docker.png?raw=true"
 }, {
