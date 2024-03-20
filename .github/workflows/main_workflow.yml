@@ -41,19 +41,13 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Build and publish Frontend (GH Page)
+      env:
+        GITHUB_REPOSITORY: ${{github.repository}}
+        GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        GITHUB_TOKEN: ${{ secrets.github_token }}
       run: |
-        cd $GITHUB_WORKSPACE
-        TAG=${{steps.tag.outputs.TAG}}
-        echo "TAG: ${TAG}"
+        bash +x ./.github/workflows/build-ghpage.sh
 
-        npm i
-        npm run build
-        git add docs
-        git config --global user.email "yoga1290@gmail.com"
-        git config --global user.name "Youssef Gamil"
-        git commit -m "$TAG";
-        git tag $TAG;
-        git push;
 
   push-docker:
     # The type of runner that the job will run on
@@ -71,4 +65,4 @@ jobs:
         TOKEN_PUBLISH_PACKAGE: ${{ secrets.TOKEN_PUBLISH_PACKAGE }}
         DOCKER_FILE: "./Dockerfile"
       run: |
-        bash +x ./.github/workflows/01_push-docker-image.sh
+        bash +x ./.github/workflows/push-docker-image.sh
