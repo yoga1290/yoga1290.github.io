@@ -21,14 +21,19 @@ export default () => (
                 backgroundImageUrl='hero.jpg'
                 title='Story'
                 text={<p style={ {lineHeight: 'normal'}}>
-                    My development journey started during middle school where I was introduced to Java ME at an anime fan-site,
+                    My development journey started during middle school where I was introduced to Java ME at an Evangelion anime fan-site,
+                    <button style={ {lineHeight: 'normal'}}
+                            onClick={openNewTab('http://gendou.com/forum/search.php?name=yoga')}
+                            className='btn border-0 btn-outline-light b-inline my-0 py-0 mx-0 px-1'> Gendou.com (2005)
+                            <span className='material-symbols-outlined align-middle'>open_in_new</span>
+                    </button>
                     made couple of 
                     <button style={ {lineHeight: 'normal'}}
                             onClick={openNewTab('https://github.com/yoga1290/Nokia-3510i#readme')}
                             className='btn border-0 btn-outline-light b-inline my-0 py-0 mx-0 px-1'> MIDlets on my Nokia 3510i
                             <span className='material-symbols-outlined align-middle'>open_in_new</span>
                     </button>
-                    which were helpful for school homeworks... and that was probably how I discovered CS!
+                    which were helpful for school homeworks, IT Teacher invited me for some contests, random tech events in Uni, etc... and that was how the CS powers spark started!
                 </p>}
                 icon='code_blocks'
                 buttonText='See more'
