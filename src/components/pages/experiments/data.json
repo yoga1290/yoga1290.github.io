@@ -1,9 +1,9 @@
 [{
     "title": "Core System (dependency module)",
     "subtitle": "Spring Boot (Java) | Maven Repository",
-    "text": "A Core-System in Plugin-Architecture Pattern to configure: Thread Pool capacity, RBAC Security (ROLE-URI), AOP logger pattern & file size, REST Client-Service, Email Service for Spring Boot apps",
-    "url": "https://github.com/yoga1290/spring-core-system#readme",
-    "backgroudImage": "https://github.com/yoga1290/spring-core-system/blob/main/docs/readme.png?raw=true"
+    "text": "A Core-System in Microkernel/Plugin Architecture Pattern to configure: Thread Pool capacity, RBAC Security (ROLE-URI), AOP logger pattern & file size, REST Client-Service, Email Service for Spring Boot apps",
+    "url": "https://github.com/yoga1290/microkernel-core-system#readme",
+    "backgroudImage": "https://github.com/yoga1290/microkernel-core-system/blob/main/docs/readme.png?raw=true"
 }, {
     "title": "VideoQuotes", 
     "subtitle": "Spring Boot (Java) | Vue.js | Webpack | Node.js | MongoDB | Nginx on Docker | GitHub Actions",
