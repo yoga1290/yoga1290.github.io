@@ -1,7 +1,7 @@
 // @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css' 
 body {
-    background-color: #7f7f7f;
-    margin-top: 50px;
+    background-color: #bfbcbc;
+    margin-top: 8rem;
 }
 
 .row {
@@ -13,4 +13,8 @@ body {
 nav.navbar {
     width: 100%;
     position: fixed;
+}
+
+.card-featured > .card {
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.5);
 }
