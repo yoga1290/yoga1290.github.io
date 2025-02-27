@@ -43,10 +43,16 @@ export default () => (
 
         <h1 className='col-12 text-center'>Experiments</h1>
         <Experiments />
-        <h1 className='col-12 text-center'>Hacks</h1>
-        <Hacks />
-        <h1 className='col-12 text-center'>Notes</h1>
-        <Notes />
+
+        <div className='row'>
+            <h1 className='col-12 col-sm-6 text-center'>Hacks</h1>
+            <h1 className='col-12 col-sm-6 text-center'>Notes</h1>
+        </div>
+        <div className='row'>
+            <div className='col-12 col-sm-6'> <Hacks /> </div>
+            <div className='col-12 col-sm-6'> <Notes /> </div>
+        </div>
+
         <h1 className='col-12 text-center'>Connect</h1>
         <Connect />
     </div>
