@@ -1,20 +1,9 @@
 version: '3.7'
 
 services:
-
-  sidecar-build:
+  frontend:
     build:
       context: .
-      dockerfile: Dockerfile.builder
-    volumes:
-      - ./src:/usr/app/src
-      - ./docs:/usr/app/docs
-    
-  frontend:
-    depends_on:
-      - sidecar-build
-    image: nginx
-    volumes:
-      - ./docs:/usr/share/nginx/html
-    ports: 
+      dockerfile: ci/build-docker-image/Dockerfile
+    ports:
       - 8080:80
