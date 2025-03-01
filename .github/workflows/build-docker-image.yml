@@ -20,6 +20,6 @@ jobs:
         GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
         # TOKEN_PUBLISH_PACKAGE: ${{ secrets.GITHUB_TOKEN }}
         TOKEN_PUBLISH_PACKAGE: ${{ secrets.TOKEN_PUBLISH_PACKAGE }}
-        DOCKER_FILE: "./Dockerfile"
+        DOCKER_FILE: "./ci/build-docker-image/Dockerfile"
       run: |
-        bash +x ./.github/workflows/build-docker-image.sh
+        bash +x ./ci/build-docker-image/build-docker-image.sh
