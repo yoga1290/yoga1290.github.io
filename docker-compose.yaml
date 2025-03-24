@@ -1,9 +1,32 @@
 version: '3.7'
 
 services:
-  frontend:
-    build:
-      context: .
-      dockerfile: ci/build-docker-image/Dockerfile
+
+  npm-install:
+    image: node:21-alpine
+    command: npm i
+    working_dir: /usr/app
+    volumes:
+    - ./:/usr/app/
+
+  npm-build:
+    depends_on:
+      npm-install:
+        condition: service_completed_successfully
+    image: node:21-alpine
+    command: npm run build
+    working_dir: /usr/app
+    volumes:
+    - ./:/usr/app/
+
+  tomcat:
+    depends_on:
+      npm-build:
+        condition: service_completed_successfully
+
+    image: tomcat:11
+    volumes:
+      - ./ci/tomcat/conf/server.xml:/usr/local/tomcat/conf/server.xml
+      - ./docs/:/usr/local/tomcat/webapps/static/
     ports:
-      - 8080:80
+      - 8080:8080
