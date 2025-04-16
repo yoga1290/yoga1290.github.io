@@ -2,12 +2,12 @@
     "title": "Kubernetes",
     "url": "https://github.com/yoga1290/cheatsheets/blob/master/Kubernetes.md"
 }, {
-    "title": "PyTorch | TensorFlow | Keras [WIP]",
+    "title": "Machine Learning (PyTorch | TensorFlow | Keras)",
     "url": "https://github.com/yoga1290/cheatsheets/blob/master/PyTorch.ipynb"
-}, {
-    "title": "NGINX/HTTPS, MySQL, Mongo & others on Docker/Compose",
-    "url": "https://github.com/yoga1290/cheatsheets/blob/master/docker.md"
 }, {
     "title": "Design Patterns in Plant UML; online generator",
     "url": "https://colab.research.google.com/github/yoga1290/design-patterns-in-plantuml/blob/main/colab_compatible.ipynb"
+}, {
+    "title": "Docker Compose configs (NGINX+HTTPS, MySQL, MongoDB)",
+    "url": "https://github.com/yoga1290/cheatsheets/blob/master/docker.md"
 }]
