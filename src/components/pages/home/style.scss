@@ -29,7 +29,7 @@
         }
 
         .card:hover .card-body {
-            overflow-y: auto;
+            overflow-y: hidden;
             padding-top: 0rem;
             .card-featured__inner-card .card-body {
                 padding: 1rem;
