@@ -6,9 +6,36 @@
         color: white;
     }
 
-    .home-screen__hero .card-featured .card {
-        background-position: 50% 40%;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .home-screen__hero .card-featured {
+
+        .card {
+            background-position: 50% 40%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+            margin-top: 1rem;
+            
+            .card-body {
+                padding-top: 13rem;
+                max-height: 18rem;
+                overflow-y: hidden;
+                transition: padding 0.3s ease-in-out;
+            }
+            .card-featured__inner-card .card-body {
+                padding: 1rem;
+            }
+            
+        }
+
+        .card:hover .card-body {
+            overflow-y: auto;
+            padding-top: 0rem;
+            .card-featured__inner-card .card-body {
+                padding: 1rem;
+            }
+        }
     }
+
+    
 }
