@@ -37,6 +37,8 @@ export default () => (
             <HashRouter>
                 <Header brand={headerProps.brand}
                         items={headerProps.items} />
+                <div className='d-sm my-5 py-3 d-md-none'></div>
+                <div className='d-md my-3 py-2'></div>
                 <div className="container-fluid">
                     <div className="mx-auto col-lg-10 col-md-10 col-sm-12 col-12">
                         <Routes>
