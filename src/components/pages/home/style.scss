@@ -13,17 +13,22 @@
             background-size: cover;
             background-repeat: no-repeat;
 
+            height: 85vh;
+
 
             margin-top: 1rem;
             
             .card-body {
-                padding-top: 13rem;
-                max-height: 18rem;
+                padding-top: 43vh; //13rem;
+                max-height: 60vh; //18rem;
                 overflow-y: hidden;
                 transition: padding 0.3s ease-in-out;
             }
-            .card-featured__inner-card .card-body {
-                padding: 1rem;
+            .card-featured__inner-card  {
+                max-height: fit-content;
+                .card-body {
+                    padding: 1rem;
+                }
             }
             
         }
