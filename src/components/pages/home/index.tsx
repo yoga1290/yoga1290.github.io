@@ -19,6 +19,7 @@ export default () => (
         <div className='home-screen__hero col-12'>
             <CardFeatured 
                 backgroundImageUrl='hero.jpg'
+                backgroundShade={false}
                 title='Story'
                 text={<p style={ {lineHeight: 'normal'}}>
                     My development journey started during middle school where I was introduced to Java ME at an Evangelion anime fan-site,
