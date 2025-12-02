@@ -22,6 +22,17 @@ button.btn:hover {
     background-color: #212529;
 }
 
+.collapsible-list-view {
+    button.btn {
+        color: white;
+        background-color: black;
+    }
+    button.btn:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
 .card-featured__inner-card .card-body {
     color: black;
     background-color: rgba(255,255,255, 0.8) !important;
