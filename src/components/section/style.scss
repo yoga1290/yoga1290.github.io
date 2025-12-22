@@ -1,0 +1,105 @@
+.section {
+
+    margin: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+    .section__icon {
+        font-size: 15rem;
+    }
+
+    .title {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        font-size: 4rem;
+    }
+
+
+    .panel-featured {
+        margin: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .panel-featured-card {
+            margin: 0rem;
+
+            background-color: #0000001a !important;
+            color: black;
+            transition: font-size ease-in 50ms;
+
+            .panel-featured-title {
+                font-size: 3rem;
+                .card-subtitle {
+                    font-size: 0.75rem;
+                }
+            }
+
+        .panel-featured-body {
+            // max-height: 100%;//14rem;
+            // min-height: 25rem;
+            min-height: 30rem;
+            // max-height: 30rem;
+            .card-featured > .card,
+            .card-1 .card {
+                // height: 100%;
+                background-color: #f7f7f7 !important;
+                transition: transform 0.3s ease-in-out;
+                transform: scale(0.85);
+                .card-text {
+                    max-height: 5rem;
+                    text-wrap: break-word;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+            .card-featured, .card-1 {
+                // min-width: 30rem;
+                // min-width: 20rem;
+                min-width: 20rem;
+                // min-height: max-content;
+            }
+
+
+        }
+
+        .card-featured__body {
+            margin-top: 0rem;
+            transition: margin-top 0.3s ease-in-out;
+        }
+    }
+    .panel-featured-card:hover {
+        // background-color: #c1c1c1 !important;
+
+        .panel-featured-body {
+            // max-height: 35rem;
+            // max-width: max-content;
+            transition: font-size ease-in 50ms;
+            // max-height: fit-content;
+
+            .card-featured > .card:hover,
+            .card-1:hover .card {
+                z-index: 300;
+                position: relative;
+                transform: scale(1);
+                min-width: 22rem;
+                .card-text {
+                    text-overflow: ellipsis;
+                    // max-height: fit-content;
+                    max-height: fit-content;
+                    overflow-wrap: break-word;
+                    overflow: auto;
+                }
+            }
+
+        }
+
+        .card-featured__body:hover {
+            margin-top: -3.5rem;
+            z-index: 200;
+        }
+    }
+
+}
