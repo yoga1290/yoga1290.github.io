@@ -16,7 +16,7 @@
     "section": "backend",
     "title": "H5Recorder",
     "subtitle": "Node.js | FFmpeg | Phantom.js",
-    "text": "NPM package that records web pages and generates video reports; \n Parameters are passed as query-string (?queryK=V) to template webpage(s), in which it get merged with video/audio resources based on color/chroma keys (Green Screen) using FFmpeg",
+    "text": "NPM package that records web pages and generates video reports; \n Parameters are passed as query-string (?queryK=V) to template webpage(s), in which it get merged with video/audio based on Chroma keys (Green Screen) using FFmpeg",
     "url": "https://github.com/yoga1290/H5Recorder#readme",
     "backgroudImage": "https://github.com/yoga1290/H5Recorder/blob/master/doc/docker.png?raw=true"
 }, {
@@ -77,8 +77,9 @@
     "url": "https://github.com/yoga1290/yoga1290.github.io"
 }, {
     "section": "frontend",
-    "title": "Design Patterns in Plant UML; online/Jupyter notebook on Docker to edit examples & create UML diagrams",
+    "title": "Design Patterns in Plant UML",
     "subtitle": "Plant UML | Shell script | Python | Jupyter | Docker",
+    "text": "Jupyter notebook Online/Offline on Docker to edit examples & create UML diagrams",
     "url": "https://github.com/yoga1290/design-patterns-in-plantuml/blob/main/notebook.ipynb"
 }, {
     "section": "embedded",
