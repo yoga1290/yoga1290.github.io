@@ -72,6 +72,13 @@
     "url": "https://github.com/yoga1290/cheatsheets/blob/master/PyTorch.ipynb"
 }, {
     "section": "frontend",
+    "title": "VideoNote: Firefox Add-On/Ext",
+    "subtitle": "JavaScript | CSS | NPM | Docker | GitHub Actions",
+    "text": "Mark video segments and add in-browser notes across Youtube & others. Allows Import/Export all the notes as CSV file.",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/videonote",
+    "backgroudImage": "https://raw.githubusercontent.com/yoga1290/videonote/master/docs/readme.png"
+}, {
+    "section": "frontend",
     "title": "My UI Pool",
     "subtitle": "TypeScript | React.js | Bootstrap | Anime.css | Tomcat on Docker | GitHub Actions",
     "text": "NPM dependency module to provide a pool of reusable UI components to resolve boilerplate stuff; e.g: cards & header of this page",
