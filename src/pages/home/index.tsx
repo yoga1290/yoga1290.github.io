@@ -42,6 +42,13 @@ export default () => (
     <div className="home-screen animate__animated animate__fadeInUp col-12">
 
         <div className='home-screen__hero col-12'>
+
+            <h1 className="hero-title">
+                Youssef <br/>
+                <span className="hero-title__highlight">Architecting</span> <br/>
+                                    The Future.
+            </h1>
+
             <CardFeatured 
                 backgroundImageUrl='hero.jpg'
                 backgroundShade={false}
@@ -64,7 +71,7 @@ export default () => (
 
                 <PanelFeatured
                     backgroundShade={false}
-                    title='Browse'
+                    title='Outline'
                     subtitle=''>
                     {sectionMetadata.map( ( ( { icon, title, section }, i) =>
                         <div className='d-inline-flex'
