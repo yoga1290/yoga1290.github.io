@@ -9,34 +9,36 @@
     .home-screen__hero > .card-featured {
 
         .card-featured__body {
-            margin-top: 32rem;
+            margin-top: 22rem;
         }
+        .card-featured__inner-card {
+            .card-title {
+                font-weight: 400;
+                // font-weight: 600;
+                // display: none;
+                height: 1rem;
+            }
+            .card-text > p {
+                // display: none;
+                height: 0rem;
+                margin: 1rem;
+                transition: height 3s ease-in;
+            }
+        }        
 
         .panel-featured-card.card {
             color: black;
 
             height: 8rem;
-            // height: 10rem;
-
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 
             padding-top: 0rem !important;
             padding-bottom: 0rem !important;
             margin-top: 0rem !important;
             margin-bottom: 0rem !important;
-
-                // margin-bottom: 2rem !important;
-            // .card-featured__body {
-            //     margin-top: 20rem;
-            // }
-
-            .card-body {
-                // padding-top: 0rem !important;
-
-                // margin-bottom: 2rem !important;
-            }
+            
             .panel-featured-title {
-                // border: 3px solid black;
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
 
             .panel-featured-body {
@@ -68,10 +70,6 @@
                     }
                 }
             }
-            .panel-featured-body:hover {
-                padding-top: 1rem !important;
-            }
-
 
         }
 
@@ -80,8 +78,9 @@
             background-size: cover;
             background-repeat: no-repeat;
 
-            height: 85vh;
-
+            height: 60vh;
+            min-height: 525px;            
+            background-color: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 
             margin-top: 1rem;
             
@@ -93,6 +92,7 @@
             }
             .card-featured__inner-card  {
                 max-height: fit-content;
+                background-color: transparent !important;
                 .card-body {
                     padding: 1rem;
                 }
@@ -109,14 +109,61 @@
         }
     }
 
-    .home-screen__hero > .card-featured:hover {
+    .home-screen__hero {
+        background-color: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0));
+        .hero-title {
+            position: absolute;
+            z-index: 200;
+            margin-top: 1rem;
+            color: white;
+            left: 5rem;
+            transform: translate(-10%, 25%);
+        
+            font-family: Space Grotesk;
+            line-height: 1;
+            font-size: 3.75rem;
+            letter-spacing: -0.02em;
+            font-weight: 300;
+
+            .hero-title__highlight {
+                color: #fdd70d !important;
+                font-weight: 600;
+                font-style: italic;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .home-screen__hero {
+            .hero-title {
+                font-size: 5rem;
+                left: 7rem;
+            }
+        }
+    }
+    .home-screen__hero:hover {
+        .hero-title {
+            transform: translate(-50%, -15%) scale(0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+    .home-screen__hero:hover > .card-featured {
         .card-featured__body {
-            margin-top: 10rem;
+            margin-top: 7rem;
         }
 
         .panel-featured-card.card:hover .panel-featured-title {
             font-size: 1rem !important;
             padding-left: 0.5rem;
+        }
+
+        .panel-featured-body {
+            padding-top: 1rem !important;
+        }
+        .card-featured__inner-card {
+            .card-title,
+            .card-text > p {
+                height: fit-content;
+            }
         }
     }
 
