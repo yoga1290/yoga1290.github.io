@@ -39,8 +39,8 @@ export default ( { icon, title, data } : SectionProp) => {
         
         <PanelFeatured
             backgroundShade={false}                     
-            title={title}
-            subtitle='scroll here'>
+            title={''}
+            subtitle='↔️ scroll for more'>
         
                     
         {data.map(({title, text, url, subtitle, backgroudImage}: any) => (

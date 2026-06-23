@@ -12,6 +12,10 @@ body {
 nav.navbar {
     width: 100%;
     position: fixed;
+
+    .navbar-nav .nav {
+        justify-content: end !important;
+    }
 }
 
 button.btn {
