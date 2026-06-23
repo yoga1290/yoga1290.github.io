@@ -42,15 +42,12 @@
         });
       });
 
-      document.addEventListener('click', function(event) {
-        $target = $(event.target);
-        var insideCard = $target.parents('.card-body').length > 0;
-        var insideButton = $target.parents('button').length > 0;
-        var isButtonInsideCard = insideCard && insideButton;
-        if (isButtonInsideCard) {
-          var title = $target.parents('.card-body').find('.card-title').text();
+      document.addEventListener('click', ({ target }) => {
+        const cardBody = target.closest('.card-body');
+
+        if (cardBody && target.closest('button')) {
           gtag('event', 'user_engagement', {
-            'page_title': title
+            page_title: cardBody.querySelector('.card-title')?.textContent.trim() || ''
           });
         }
       });

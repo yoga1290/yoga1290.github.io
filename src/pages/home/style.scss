@@ -175,5 +175,47 @@
         font-size: 4rem;
     }
 
+
+/** Pipeline **/
+    .pipeline-roadmap {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+
+        .pipeline-roadmap__pin {
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            top: -1.3rem;
+            left: calc(50% - 1rem);
+        }
+        .pipeline-roadmap__content {
+            position: relative;
+            min-height: 20px;
+        }
+    }
+
+    .pipeline-roadmap:nth-child(2n+1) {
+        border-left: 10px solid #757171;
+        border-top: 10px solid #222121;
+        
+        .pipeline-roadmap__pin {
+            border: 0.7rem solid #757171;
+        }
+    }
+
+    .pipeline-roadmap:nth-child(2n) {
+        border-right: 10px solid #222121;
+        border-top: 10px solid #757171;
+
+        .pipeline-roadmap__pin {
+            border: 0.7rem solid black;
+        }
+    }
+
+    
     
 }

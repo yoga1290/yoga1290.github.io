@@ -6,6 +6,7 @@
 
     .section__icon {
         font-size: 8rem;
+        text-shadow: 0.1rem 0.1rem #757171;
     }
 
     .title {
@@ -15,6 +16,7 @@
         align-content: center;
         flex-wrap: wrap;
         font-size: 4rem;
+        text-shadow: 0.1rem 0.1rem #757171;
     }
 
 
@@ -23,10 +25,17 @@
         padding-left: 0rem;
         padding-right: 0rem;
     }
-    .panel-featured-card {
+    .panel-featured-card.card {
             margin: 0rem;
 
-            background-color: #0000001a !important;
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+
+            // background-color: #0000001a !important;
+            background-color: #ebebeb !important;
+            
             color: black;
             transition: font-size ease-in 50ms;
 
