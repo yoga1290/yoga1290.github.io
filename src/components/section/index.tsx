@@ -1,10 +1,12 @@
 import React from 'react';
 
-import Card from 'yoga1290-ui-pool/react/card'
+import Card from 'yoga1290-ui-pool/react/card-with-buttons'
 import CardFeatured from 'yoga1290-ui-pool/react/card-featured'
-import PanelFeatured from 'yoga1290-ui-pool/react/panel-featured';
+import SearchAndSelectAndSortPanel from 'yoga1290-ui-pool/react/search-and-select-and-sort-panel';
+import { similaritySearch } from './similaritySearch';
 
 import './style.scss';
+import { PagingAndSortingResult } from 'yoga1290-ui-pool/react/search-and-select-and-sort-panel/usePagingAndSorting';
 
 const openLink = (url:string) => ( ()=>(window.open(url, '_blank')) );
 
@@ -36,18 +38,36 @@ export default ( { icon, title, data } : SectionProp) => {
     
     <div
         className="section animate__animated animate__fadeIn row col-12 d-inline-flex ">
-        
-        <PanelFeatured
-            backgroundShade={false}                     
-            title={''}
-            subtitle='↔️ scroll for more'>
-        
-                    
-        {data.map(({title, text, url, subtitle, backgroudImage}: any) => (
+
+        <SearchAndSelectAndSortPanel
+            onItemsQuery={(query) => (new Promise<PagingAndSortingResult<any>>((res)=> {
+                
+                const hasValidQuery = !!query && query.length > 0;
+                let content = data;
+                if (hasValidQuery) {
+                    const itKeys = ['title', 'subtitle', 'text'];
+                    content =  similaritySearch(data, query, itKeys).map(it => it.value);
+                }
+                setTimeout(()=> (
+                    res({
+                        content,
+                        size: content.length,
+                        first: true,
+                        last: true,
+                    })
+                ), 500);
+                
+            }))}
+            allowHorizontalView={true}
+            allowVerticalInlineDisplay={true}
+            title='Quick search'
+            materialIcon='book'
+            maxSelection={0}
+            renderItem={({title, text, url, subtitle, backgroudImage}: any, _selection) => (
             
             !!backgroudImage? 
-            (<div className='col-12 col-md-6 d-flex'
-                    >
+            (
+            <div className='col-12' style={{width: '20rem'}}>
                 <CardFeatured
                     title={title}
                     subtitle={subtitle}
@@ -55,18 +75,46 @@ export default ( { icon, title, data } : SectionProp) => {
                     icon='open_in_new'
                     backgroundImageUrl={backgroudImage}
                     click={openLink(url)} />
+
+                
+                    {/* <CardFeaturedWithButtons 
+                        title={title}
+                        subtitle={subtitle}
+                        text={text}
+                        icon='open_in_new'
+                        backgroundImageUrl={backgroudImage}
+                        buttons={[{
+                            text:'github',
+                            icon:'open_in_new',
+                            click:() => (
+                                new Promise((res, _rej)=>{
+                                    openLink(url);
+                                    res({});
+                                })
+                            )
+                        }]} /> */}
             </div>): (
-            <div className='col-12 col-sm-6 col-md-4 d-flex'
+            <div className='col-12 d-inline-flex'
                     >
                 <Card
                     title={title}
                     subtitle={subtitle}
                     text={text}
+                    buttons={[{
+                        text:'github',
+                        icon:'open_in_new',
+                        click: openLink(url)
+                    }]} />
+                {/* <Card
+                    title={title}
+                    subtitle={subtitle}
+                    text={text}
                     icon='open_in_new'
-                    click={openLink(url)} />
+                    click={openLink(url)} /> */}
             </div>)
-        ))}
-</PanelFeatured>
+        )}>
+            
+        </SearchAndSelectAndSortPanel>
 
     </div>
 </div>

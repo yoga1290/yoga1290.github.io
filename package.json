@@ -32,7 +32,6 @@
     "@types/react-router-dom": "^5.3.3",
     "ajv": "^6.10.2",
     "babel-loader": "^8.0.5",
-    "bootstrap": "^4.3.1",
     "css-loader": "^6.8.1",
     "datatables.net-dt": "^1.10.21",
     "file-loader": "^6.2.0",
@@ -51,6 +50,6 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
-    "yoga1290-ui-pool": "github:yoga1290/yoga1290-ui-pool#v25.12.39"
+    "yoga1290-ui-pool": "github:yoga1290/yoga1290-ui-pool#v26.07.45"
   }
 }

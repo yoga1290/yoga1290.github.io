@@ -7,15 +7,17 @@
     }
 
     .home-screen__hero > .card-featured {
+        
+        border-left: 10px solid;
+        margin-top: 28px;
+        padding-top: 0px;
 
         .card-featured__body {
             margin-top: 22rem;
         }
         .card-featured__inner-card {
             .card-title {
-                font-weight: 400;
-                // font-weight: 600;
-                // display: none;
+                font-weight: 500;
                 height: 1rem;
             }
             .card-text > p {
@@ -81,7 +83,8 @@
             height: 60vh;
             min-height: 525px;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0)), url("https://yoga1290.github.io/hero.jpg") !important;
-            margin-top: 1rem;
+            margin-top: 0rem !important;
+            padding-top: 0rem !important;
             
             .card-body {
                 // padding-top: 43vh; //13rem;
@@ -103,7 +106,8 @@
             overflow-y: hidden;
             padding-top: 0rem;
             .card-featured__inner-card .card-body {
-                padding: 0.5rem;
+                padding: 0.3rem;
+
             }
         }
     }
@@ -215,7 +219,5 @@
             border: 0.7rem solid black;
         }
     }
-
-    
     
 }
