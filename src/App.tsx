@@ -27,9 +27,9 @@ export default () => (
         <Header brand={headerProps.brand}
                 items={headerProps.items} />
 
-        <div className='d-sm d-md-none my-3 py-4'></div>
-        <div className='d-md my-3 py-2 d-none d-md-block'></div>
         <div className="home-section container-fluid">
+            <div className='d-sm d-md-none py-5'></div>
+            <div className='d-md d-md-block d-none py-4'></div>
             <div className="mx-auto col-lg-10 col-md-10 col-sm-12 col-12">
                 <Home/>
             </div>

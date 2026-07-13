@@ -32,8 +32,6 @@
             padding-bottom: 0rem !important;
             margin-top: 0rem !important;
             margin-bottom: 0rem !important;
-
-            // background-color: #0000001a !important;
             background-color: #ebebeb !important;
             
             color: black;
@@ -62,6 +60,7 @@
             }
             .card-featured, .card-1 {
                 min-width: 20rem;
+                text-wrap: auto;
             }
 
 
@@ -73,13 +72,9 @@
         }
     }
     .panel-featured-card:hover {
-        // background-color: #c1c1c1 !important;
 
         .panel-featured-body {
-            // max-height: 35rem;
-            // max-width: max-content;
             transition: font-size ease-in 50ms;
-            // max-height: fit-content;
 
             .card-featured > .card:hover,
             .card-1:hover .card {
@@ -102,6 +97,63 @@
             margin-top: -3.5rem;
             z-index: 200;
         }
+    }
+
+    .card-with-buttons .card {
+        width: 20rem;
+        height: 20rem;
+        color: black;
+        text-wrap: auto;
+        background-color: #aeb5bd !important;
+    }
+
+    .card-featured {
+        >.card {
+            text-wrap: auto;
+            background-size: contain;
+
+            width: 20rem;
+            height: 20rem;
+
+            .card-featured__inner-card {
+                // max-height: 5rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-height: 10rem;
+                margin-top: 10rem !important;
+                width: fit-content !important;
+                transition: margin-top cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+            }
+        }
+        .card-featured__body {
+            transform: scale(0.7);
+            margin: 0rem !important;
+            // margin-left: 0rem !important;
+            transition: margin-top cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+        }
+
+        >.card:hover {
+            z-index: 100;
+            width: 21rem;
+            height: 21rem;
+
+            .card-featured__body {
+                transform: scale(1.1);
+            }
+            .card-featured__inner-card {
+                margin: 0rem !important;
+                max-height: 100%;
+                overflow: auto;
+            }
+        }
+        
+    }
+
+    .search-and-select-and-sort-panel
+    .search-and-select-and-sort-panel__list__list--vertical {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 100%;
     }
 
 }
