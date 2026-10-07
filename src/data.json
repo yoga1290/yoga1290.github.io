@@ -47,6 +47,13 @@
     "url": "https://github.com/yoga1290/cheatsheets/blob/master/docker.md"
 }, {
     "section": "ai",
+    "title": "RAG: Hexagonal Architecture for Provider-Agnostic RAG Pipelines",
+    "subtitle": "Python | Llama.cpp | LangChain | Grafana | Prometheus | Docker",
+    "text": "Hexagonal Architecture for Provider-Agnostic RAG Pipelines. DEV.to article & Python PyPI Library",
+    "url": "https://dev.to/yoga1290/hexagonal-architecture-for-provider-agnostic-rag-pipelines-4p67",
+    "backgroudImage": "https://github.com/yoga1290/rag/blob/master/docs/domain-overview.png?raw=true"
+}, {
+    "section": "ai",
     "title": "Face verification",
     "subtitle": "Python | PyTorch | TensorFlow/Keras | FFmpeg",
     "text": "Fine-tuned VGG16 model to verify certain person out of YouTube video",
